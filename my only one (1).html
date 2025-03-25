@@ -1,0 +1,128 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter for My Sayangg 💕</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Background Animation -->
+    <div class="background-heart"></div>
+
+    <!-- Heart Button -->
+    <div class="heart-container" onclick="showLetter()">
+        <div class="heart"></div>
+        <p class="click-text">Click the heart 💖</p>
+    </div>
+
+    <!-- Love Letter -->
+    <div class="letter" id="loveLetter">
+        <div class="letter-content">
+            <h2>Dear Love,</h2>
+            <p>Heyyoo sayangg, This is your favourite ladyboy 🥰🥰. So I'm writing you this letter to let youuuu💌☝️yeshh youu babygurll know that I really REALLY REALLYYY LOVEE YOUU SOO MUCHH!</p>
+            <p>I know you're going through your period now, and I don’t want you to feel sed🥺, so I hope this letter will help cheer you up✨✨. I'm not a perfect boyfriend, I have made many mistakes that made you feel sad🥲, but I pwomisee you one thing—I will make youu the happiestt person ever. I will become the person that youu always wanted. I will cherishh youu the wayy people should cherish you.</p>
+            <p>I'm doing all of this because you are the most special thing that has ever happened in my life. I’ve never done anything like this before. Only you—the only person that makes me want to do anything for youu. I still remember the day we formed our relationship, 💯 agree hahh🤣💓.</p>
+            <p>Thank youu soo muchh sayangg for entering my life. I couldn't imagine us not being together anymore. No girl has ever made me feel this way. Only you sayangg, the only person.💓💓💓</p>
+            <p>(I wanna get married with you 🥰💍 can can?)</p>
+        </div>
+    </div>
+
+    <!-- Footer Message -->
+    <div class="footer">
+        Created by your beloved Zavier, Ladyboy 💖
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html><style>/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: pink;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
+
+/* Heart Container */
+.heart-container {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+}
+
+/* Heart Button */
+.heart {
+    font-size: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.heart:hover {
+    transform: scale(1.2);
+}
+
+/* Click the Heart Text */
+.click-text {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Love Letter */
+.letter {
+    position: fixed;
+    bottom: -100%; /* Hidden by default */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    transition: bottom 0.8s ease-in-out;
+}
+
+/* Show letter when heart is clicked */
+.letter.show {
+    bottom: 20px;
+}
+
+/* Letter Content */
+.letter-content h2 {
+    margin: 0;
+    font-size: 24px;
+    color: red;
+}
+
+.letter-content p {
+    font-size: 16px;
+    color: black;
+}</style><script>// Function to show love letter
+function showLetter() {
+    document.getElementById("loveLetter").classList.add("show");
+    
+    // Play background music
+    let audio = document.getElementById("backgroundMusic");
+    if (audio) {
+        audio.play();
+    }
+}
+
+// Background Music
+window.onload = function() {
+    let audio = document.createElement("audio");
+    audio.id = "backgroundMusic";
+    audio.src = "4 - Sparks.flac"; // Make sure this file is in the same directory
+    audio.loop = true;
+    audio.volume = 0.5;
+    document.body.appendChild(audio);
+}</script>
